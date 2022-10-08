@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace Arac_Kullanimlari
 {
-    public partial class Form3 : Form
+    public partial class Odev : Form
     {
-        public Form3()
+        public Odev()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add(textBox1.Text+" "+ textBox2.Text + " / " + textBox3.Text + " / " + textBox4.Text);
         }
     }
 }
